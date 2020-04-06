@@ -20,11 +20,7 @@ class Transfer
     if self.sender.balance < self.amount
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
-    else if self.status == "complete"
-      "each transfer can only happen once"
-    else 
-      status = "complete"
-    end 
+   end 
    
   end 
   
