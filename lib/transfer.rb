@@ -21,7 +21,7 @@ class Transfer
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     elseif status == "complete"
-       break
+
     else 
       self.sender.deposit( self.amount * -1 ) 
       self.receiver.deposit( self.amount )
