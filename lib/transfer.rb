@@ -17,6 +17,7 @@ class Transfer
   end 
   
   def execute_transaction
-    if 
+    if self.sender.balance < self.amount
+      
   end 
 end
