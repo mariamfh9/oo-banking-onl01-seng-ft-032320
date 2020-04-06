@@ -21,11 +21,11 @@ class Transfer
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     elseif status == "complete"
-       "Transaction was already excuted"
-     else 
-       @sender.deposit( @amount * -1 ) 
-      @receiver.deposit( @amount )
-      @status = "complete"
+       break
+    else 
+      self.sender.deposit( self.amount * -1 ) 
+      self.receiver.deposit( self.amount )
+      self.status = "complete"
     end 
   end 
 end
