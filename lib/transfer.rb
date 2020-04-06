@@ -22,5 +22,7 @@ class Transfer
       "Transaction rejected. Please check your account balance."
     elseif status == "complete"
        "Transaction was already excuted"
+     else 
+       
   end 
 end
