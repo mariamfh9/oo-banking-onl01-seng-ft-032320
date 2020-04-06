@@ -21,7 +21,7 @@ class Transfer
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     else if self.status == "complete"
-      self.status = "rejected"
+      "each transfer can only happen once"
     else 
       
     end 
