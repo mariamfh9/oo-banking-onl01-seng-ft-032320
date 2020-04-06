@@ -28,10 +28,10 @@ class Transfer
   end
   
   def reverse_transfer
-    if @status == "complete"
-      @sender.deposit( @amount ) 
-      @receiver.deposit( @amount * -1)
-      @status = "reversed"
+    if self.status == "complete"
+      self.sender.deposit( self.amount ) 
+      self.receiver.deposit( self.amount * -1)
+      self.status = "reversed"
     end
   end 
   
